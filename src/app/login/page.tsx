@@ -10,6 +10,7 @@ import { MdOutlinePhoneAndroid } from "react-icons/md";
 
 const page = () => {
   const [error, seterror] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState("");
   return (
     <form className="flex flex-col space-y-3 justify-center font-bold text-xl h-screen max-w-sm mx-auto">
       <div className="text-center">
@@ -21,10 +22,24 @@ const page = () => {
         error="شماره موبایل یا ایمیل نادرست است."
         enTitle="phone"
         Icon={<MdOutlinePhoneAndroid />}
-        hasError={false}
+        hasError={error}
+        onChange={(e) => {
+          if (e.target.value.length != 11) {
+            seterror(true);
+            return;
+          }
+
+          setPhoneNumber(e.target.value);
+          seterror(false);
+        }}
       />
       {/* <ButtonHero title="ادامه" type="submit" className="w-full" /> */}
-      <LinkHero title="ادامه" href="/otp" className="w-full" />
+      <LinkHero
+        disable={phoneNumber.length != 11 || error}
+        title="ادامه"
+        href="/otp"
+        className="w-full"
+      />
     </form>
   );
 };

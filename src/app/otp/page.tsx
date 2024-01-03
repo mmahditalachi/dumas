@@ -14,8 +14,10 @@ const page = () => {
       id="otp-container"
       className="flex flex-col space-y-8 justify-center font-bold text-xl h-screen max-w-sm mx-auto"
     >
-      <div className="text-lg text-right">
-        <p>:کد تایید را وارد کنید</p>
+      <div className="text-right">
+        <p className="text-lg text-black dark:text-white">
+          :کد تایید را وارد کنید
+        </p>
       </div>
       <OtpInput
         value={otp}
@@ -27,7 +29,7 @@ const page = () => {
         renderSeparator={<span className="m-3"></span>}
         renderInput={(props) => <input {...props} />}
       />
-      <LinkHero title="ادامه" href="#" className="w-full" />
+      <LinkHero title="ادامه" href="/sendreq" className="w-full" />
     </div>
   );
 };
