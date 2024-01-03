@@ -1,0 +1,9 @@
+#otp-container div {
+  justify-content: center;
+}
+
+.inputStyle {
+  justify-content: center;
+  height: 50px;
+  width: 50px !important;
+}
