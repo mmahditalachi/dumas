@@ -16,7 +16,7 @@ const nextConfig = {
   },
 };
 
-module.exports = withNextIntl({
+module.exports = {
   nextConfig,
   output: "standalone",
-});
+};
