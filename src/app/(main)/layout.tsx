@@ -35,7 +35,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fa" dir="rtl" className={`${iranSans.variable} font-sans`}>
+    <html
+      lang="fa"
+      dir="rtl"
+      className={`relative ${iranSans.variable} font-sans`}
+    >
       <Provider>
         <DarkModeBtn />
         <body className={`sm:px-5 h-screen`}>{children}</body>

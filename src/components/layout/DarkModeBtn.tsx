@@ -18,7 +18,7 @@ const DarkModeBtn = () => {
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
-    <div>
+    <div className="absolute top-0 right-0">
       {currentTheme === "dark" ? (
         <MdOutlineLightMode
           className="h-6 w-6 cursor-pointer text-yellow-400"

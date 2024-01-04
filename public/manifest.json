@@ -25,7 +25,10 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#FFFFFF",
+  "theme_colors": [
+    { "color": "#FFFFFF" },
+    { "color": "#111827", "media": "(prefers-color-scheme: dark)" }
+  ],
   "background_color": "#FFFFFF",
   "start_url": "/",
   "scope": ".",
