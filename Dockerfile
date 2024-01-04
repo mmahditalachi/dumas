@@ -11,7 +11,8 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-RUN NEXT_PUBLIC_MAP_KEY=NEXT_PUBLIC_MAP_KEY npm run build
+ARG MAP_KEY
+RUN NEXT_PUBLIC_MAP_KEY=${MAP_KEY} npm run build
 
 # Production image, copy all the files and run next
 FROM node:18.17.0-alpine AS runner
@@ -38,5 +39,7 @@ EXPOSE 3000
 
 ENV PORT 3000
 ENV HOSTNAME "0.0.0.0"
+
+ENTRYPOINT ["/app/entrypoint.sh"]
 
 CMD ["node", "server.js"]
