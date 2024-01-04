@@ -40,8 +40,6 @@ const page = () => {
     return () => clearInterval(interval);
   }, []);
 
-  console.log("key:", process.env.NEXT_PUBLIC_MAP_KEY);
-
   return (
     <div className="relative h-screen">
       <NeshanMap
