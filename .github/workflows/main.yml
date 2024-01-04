@@ -55,3 +55,5 @@ jobs:
           file: Dockerfile
           push: true
           tags: sightlab/dumas.web:latest
+          secrets: |
+            "MAP_KEY=${{ secrets.MAP_KEY }}"
