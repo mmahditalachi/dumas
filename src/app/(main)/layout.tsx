@@ -42,7 +42,9 @@ export default function RootLayout({
     >
       <Provider>
         <DarkModeBtn />
-        <body className={`sm:px-5 h-screen`}>{children}</body>
+        <body className={`sm:px-5 h-screen sm:overscroll-none `}>
+          {children}
+        </body>
       </Provider>
     </html>
   );

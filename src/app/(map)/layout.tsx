@@ -37,7 +37,7 @@ export default function RootLayout({
     <html lang="fa" dir="rtl" className={`${iranSans.variable} font-sans`}>
       <Provider>
         {/* <DarkModeBtn /> */}
-        <body className={`h-screen`}>{children}</body>
+        <body className={`h-screen overscroll-none`}>{children}</body>
       </Provider>
     </html>
   );
