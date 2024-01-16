@@ -2,7 +2,7 @@ import LinkHero from "@/components/shared/LinkHero";
 import React from "react";
 import "./page.css";
 import TicTacToe from "@/components/shared/TicTacToe";
-import Waiting from "@/components/shared/waiting";
+import Waiting from "@/components/shared/Waiting";
 
 const page = () => {
   return (
