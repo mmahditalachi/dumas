@@ -111,7 +111,7 @@ const page = () => {
       {sourceLocation.length === 2 && (
         <button
           onClick={removeMarker}
-          className="flex items-center justify-center text-lg h-16 w-16 absolute z-50 top-10 right-10 rounded-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 cursor-pointer"
+          className="flex items-center justify-center text-lg h-10 w-10 absolute z-50 top-10 right-10 rounded-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 cursor-pointer"
         >
           <FaArrowRightLong />
         </button>

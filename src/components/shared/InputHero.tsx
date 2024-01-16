@@ -8,6 +8,7 @@ type Props = {
   enTitle: string;
   error: string;
   hasError: boolean;
+  value: string;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
@@ -29,11 +30,12 @@ const HeroInput = (props: Props) => {
           {props.Icon}
         </div>
         <input
-          type="text"
+          type="number"
           dir="ltr"
           id="phone-icon"
           className={`${props.hasError ? errorStyle : mainStyle} `}
           placeholder="0912"
+          value={props.value}
           onChange={props.onChange}
         />
       </div>

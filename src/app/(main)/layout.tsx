@@ -38,11 +38,11 @@ export default function RootLayout({
     <html
       lang="fa"
       dir="rtl"
-      className={`relative ${iranSans.variable} font-sans`}
+      className={`relative ${iranSans.variable} font-sans overscroll-none`}
     >
       <Provider>
         <DarkModeBtn />
-        <body className={`sm:px-5 h-screen overscroll-none `}>{children}</body>
+        <body className={`sm:px-5 h-screen overflow-hidden`}>{children}</body>
       </Provider>
     </html>
   );

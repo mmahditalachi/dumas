@@ -23,13 +23,18 @@ const page = () => {
         enTitle="phone"
         Icon={<MdOutlinePhoneAndroid />}
         hasError={error}
+        value={phoneNumber}
         onChange={(e) => {
-          if (e.target.value.length != 11) {
+          const input = e.target.value;
+
+          const numericInput = input.replace(/[^0-9]/g, "");
+          setPhoneNumber(numericInput);
+
+          if (numericInput.length != 11) {
             seterror(true);
             return;
           }
 
-          setPhoneNumber(e.target.value);
           seterror(false);
         }}
       />

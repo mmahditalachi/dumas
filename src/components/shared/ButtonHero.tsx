@@ -4,7 +4,7 @@ type Props = {
   title: string;
   className?: string;
   onClick: () => void;
-  type: "submit" | "reset";
+  type: "submit" | "reset" | "button";
 };
 
 const ButtonHero = (props: Props) => {

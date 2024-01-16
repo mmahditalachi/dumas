@@ -1,0 +1,119 @@
+@keyframes anima1 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: calc(100% - 20px);
+  }
+  50% {
+    top: calc(100% - 20px);
+    left: calc(100% - 20px);
+  }
+  75% {
+    top: calc(100% - 20px);
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes anima2 {
+  0% {
+    top: 0;
+    left: calc(100% - 20px);
+  }
+  25% {
+    top: calc(100% - 20px);
+    left: calc(100% - 20px);
+  }
+  50% {
+    top: calc(100% - 20px);
+    left: 0;
+  }
+  75% {
+    top: 0;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: calc(100% - 20px);
+  }
+}
+@keyframes anima3 {
+  0% {
+    top: calc(100% - 20px);
+    left: calc(100% - 20px);
+  }
+  25% {
+    top: calc(100% - 20px);
+    left: 0;
+  }
+  50% {
+    top: 0;
+    left: 0;
+  }
+  75% {
+    top: 0;
+    left: calc(100% - 20px);
+  }
+  100% {
+    top: calc(100% - 20px);
+    left: calc(100% - 20px);
+  }
+}
+@keyframes anima4 {
+  0% {
+    top: calc(100% - 20px);
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: 0;
+    left: calc(100% - 20px);
+  }
+  75% {
+    top: calc(100% - 20px);
+    left: calc(100% - 20px);
+  }
+  100% {
+    top: calc(100% - 20px);
+    left: 0;
+  }
+}
+
+.item-loader {
+  position: absolute;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+.item-loader:nth-child(1) {
+  background-color: rgb(147, 197, 253);
+  top: 0;
+  left: 0;
+  animation: anima1 2s ease infinite;
+}
+.item-loader:nth-child(2) {
+  background-color: rgb(30 64 175);
+  top: 0;
+  right: 0;
+  animation: anima2 2s ease infinite;
+}
+.item-loader:nth-child(3) {
+  background-color: rgb(147, 197, 253);
+  bottom: 0;
+  left: 0;
+  animation: anima3 2s ease infinite;
+}
+.item-loader:nth-child(4) {
+  background-color: rgb(30 64 175);
+  bottom: 0;
+  right: 0;
+  animation: anima4 2s ease infinite;
+}
