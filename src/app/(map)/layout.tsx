@@ -34,10 +34,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fa" dir="rtl" className={`${iranSans.variable} font-sans`}>
+    <html
+      lang="fa"
+      dir="rtl"
+      className={`${iranSans.variable} font-sans overscroll-none`}
+    >
       <Provider>
         {/* <DarkModeBtn /> */}
-        <body className={`h-screen overscroll-none`}>{children}</body>
+        <body className={`h-screen overflow-hidden`}>{children}</body>
       </Provider>
     </html>
   );
